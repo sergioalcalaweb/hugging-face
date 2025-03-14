@@ -1,0 +1,5 @@
+.qodo
+/hugging/** */
+test_trainer/**
+.DS_Store
+/** */**.pkl
