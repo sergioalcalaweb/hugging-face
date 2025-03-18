@@ -3,3 +3,4 @@
 test_trainer/**
 .DS_Store
 /** */**.pkl
+/chatbot_model/**
