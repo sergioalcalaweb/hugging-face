@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "title": "Empresa XYZ",
+      "paragraphs": [
+        {
+          "context": "Nuestra empresa ofrece soluciones en IA y desarrollo web.",
+          "qas": [
+            {
+              "question": "¿Qué ofrece la empresa?",
+              "answers": [{"text": "soluciones en IA y desarrollo web", "answer_start": 26}],
+              "id": "1"
+            }
+          ]
+        },
+        {
+          "context": "Estamos ubicados en Ciudad de México, pero operamos de manera global.",
+          "qas": [
+            {
+              "question": "¿Dónde está ubicada la empresa?",
+              "answers": [{"text": "Ciudad de México", "answer_start": 21}],
+              "id": "2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
