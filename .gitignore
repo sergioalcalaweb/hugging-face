@@ -4,3 +4,4 @@ test_trainer/**
 .DS_Store
 /** */**.pkl
 /chatbot_model/**
+/distilbert-base-uncased-lora-text-classification/**
