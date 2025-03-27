@@ -57,7 +57,24 @@ def compute_metrics(p):
 
     return {"accuracy": accuracy.compute(predictions=predictions, references=labels)}
 
+# define list of examples
+text_list = ["It was good.", "Not a fan, don't recommed.", "Better than the first one.", "This is not worth watching even once.", "This one is a pass."]
 
+print("Untrained model predictions:")
+print("----------------------------")
+for text in text_list:
+    # tokenize text
+    inputs = tokenizer.encode(text, return_tensors="pt")
+    # compute logits
+    logits = model(inputs).logits
+    # convert logits to label
+    predictions = torch.argmax(logits)
+
+    print(text + " - " + id2label[predictions.tolist()])
+
+
+print("Training model...")
+print("----------------------------")
 peft_config = LoraConfig(task_type="SEQ_CLS",
                         r=4,
                         lora_alpha=32,
